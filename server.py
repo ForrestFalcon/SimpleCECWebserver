@@ -23,7 +23,7 @@ class MyHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
        # request is either for a file to be served up or our test
        if parsedParams.path == "/powerOn":
           self.power(True)
-       elif parsedParams.path == "/PowerOff":
+       elif parsedParams.path == "/powerOff":
            self.power(False)
        else:
           # Default to serve up a local file 
